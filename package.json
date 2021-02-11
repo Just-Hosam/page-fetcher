@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/Just-Hosam/page-fetcher#readme",
   "dependencies": {
-    "fs": "0.0.1-security",
     "request": "^2.88.2"
   }
 }
