@@ -1,6 +1,5 @@
 const request = require('request');
 const fs = require('fs');
-const path = require('path');
 const readline = require('readline');
 
 const rl = readline.createInterface({
@@ -20,7 +19,6 @@ request(`${args[0]}`, (error, response, body) => {
           } else {
             fs.writeFile(`${args[1]}`, body, function (err) {
               if (err) throw err;
-        
               fs.stat(`${args[1]}`, (err, stat) => {
                 console.log(`Downloaded and saved ${stat.size} bytes to ${args[1]}`);
                 process.exit();
